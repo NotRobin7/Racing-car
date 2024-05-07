@@ -84,12 +84,12 @@ let score = 0;
 function drawScore() {
     ctx.fillStyle = "#ffffff";
     ctx.font = "24px Arial";
-    ctx.fillText("Score: " + score, 10, 30);
+    ctx.fillText("Score: " + score, 1, 30);
 }
 
 // Fungsi untuk menambah skor
 function increaseScore() {
-    score += 5; // Atur skor sesuai dengan preferensi Anda
+    score += 1; // Atur skor sesuai dengan preferensi Anda
 }
 
 // Fungsi untuk mereset skor
@@ -171,6 +171,7 @@ function detectCollision() {
 // Fungsi untuk mereset game
 function resetGame() {
   resetScore();
+    suara.currentTime = 0;
     // Reset posisi mobil utama
     car.x = canvas.width / 2 - car.width / 2;
     car.y = canvas.height - 100;
