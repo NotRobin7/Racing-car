@@ -155,8 +155,8 @@ function updateOtherCars() {
 // Fungsi untuk mendeteksi tabrakan
 function detectCollision() {
     otherCars.forEach(function(otherCar) {
-        if (car.x < otherCar.x + otherCar.width &&
-            car.x + car.width > otherCar.x &&
+        if (car.x < otherCar.x + otherCar.height &&
+            car.x + car.height > otherCar.x &&
             car.y < otherCar.y + otherCar.height &&
             car.y + car.height > otherCar.y) {
             // Tabrakan terdeteksi, reset game
