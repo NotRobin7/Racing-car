@@ -185,7 +185,7 @@ function resetGame() {
 // Membuat mobil tambahan secara acak setiap beberapa detik
 setInterval(function() {
     createOtherCar();
-}, 1500);
+}, 800);
 
 
 
